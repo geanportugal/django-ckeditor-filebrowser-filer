@@ -8,6 +8,8 @@ except:
 
 from .views import *
 
+app_name = "filebrowser_filer"
+
 urlpatterns = patterns('',
     re_path(r'version/$', filer_version, name='filer_version'),
     re_path(r'setting/(?P<setting>\w+)/$', get_setting, name='get_setting'),
