@@ -8,7 +8,7 @@ except:
 
 from .views import *
 
-app_name = "ckeditor_filebrowser_filer"
+# app_name = "ckeditor_filebrowser_filer"
 
 urlpatterns = patterns(
     re_path(r'^version/', filer_version, name='filer_version'),
