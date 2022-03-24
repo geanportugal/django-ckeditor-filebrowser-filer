@@ -8,9 +8,9 @@ except:
 
 from .views import *
 
-app_name = "filebrowser_filer"
+app_name = "ckeditor_filebrowser_filer"
 
-urlpatterns = patterns('',
+urlpatterns = patterns(
     re_path(r'^version/', filer_version, name='filer_version'),
     re_path(r'^setting/(?P<setting>\w+)/$', get_setting, name='get_setting'),
     re_path(r'^url_reverse/$', url_reverse, name='js_url_reverse'),
